@@ -37,7 +37,7 @@
     font-weight: 100;
 }
 #movie .movie-info .movie-info__data h1 .teaser {
-    float: right;
+    /* float: right; */
     font-size: 22px;
     font-weight: 100;
     cursor: pointer;

@@ -31,7 +31,7 @@ const renderMovieDetails = async (movieId) => {
     const { backdrop_path, poster_path, title, overview, genres, release_date } = movieDetails;
     renderBackground(backdrop_path);
     renderPoster(poster_path, title);
-    // renderMovieData(title, overview, genres, release_date);
+    renderMovieData(title, overview, genres, release_date);
     // getTeaser(movieId);
 }
 
@@ -45,3 +45,31 @@ const renderPoster = (poster_path, title) => {
     const html = `<img src="${urlPoster}" class="img-fluid movie-info__poster-img" alt="${title}" />`;
     document.getElementsByClassName('movie-info__poster')[0].innerHTML = html;
 }
+
+const renderMovieData = (title, overview, genres, relese_date) => {
+    const dataSplit = relese_date.split('-');
+
+    let htmlGenres = "";
+    genres.forEach(genre => {
+        htmlGenres += `<li>${genre.name}</li>`;
+    })
+
+
+    const html = `
+        <h1>
+            ${title}
+            <span class="date-any">${dataSplit[0]}</span>
+            <span class="teaser" data-toggle="modal" data-target="#video-teaser">
+                <i class="fas fa-play"></i> Ver trailer
+            </span>
+        </h1>
+        <h5>General</h5>
+        <p>${overview}</p>
+        <h5>Generos</h5>
+        <ul>
+            ${htmlGenres}
+        </ul>
+    `;
+    document.getElementsByClassName('movie-info__data')[0].innerHTML = html;
+}
+

@@ -56,3 +56,28 @@
     padding-right: 50px;
     font-weight: 100;
 }
+
+#movie #video-teaser .modal-content {
+    background: transparent;
+    border: 0;
+}
+#movie #video-teaser .modal-body {
+    text-align: center;
+    padding: 0;
+}
+#movie #video-teaser .close {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    color: #fff;
+    opacity: 1;
+    text-shadow: none;
+}
+#movie #video-teaser .close i {
+    font-size: 40px;
+}
+#movie #video-teaser .no-teaser {
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+}

@@ -1,0 +1,13 @@
+#movie .movie-info {
+    height: calc(100vh - 59px);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 0;
+    
+}
+
+#movie .movie-info .bg-color-custom {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+} 

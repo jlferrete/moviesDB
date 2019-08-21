@@ -28,9 +28,14 @@ const renderMovieDetails = async (movieId) => {
     const movieDetails = await getMovieDetails(movieId);
     console.log(movieDetails);
 
-    // const { backdrop_path, poster_path, title, overview, genres, release_date } = movieDetails;
-    // renderBackground(backdrop_path);
+    const { backdrop_path, poster_path, title, overview, genres, release_date } = movieDetails;
+    renderBackground(backdrop_path);
     // renderPoster(poster_path, title);
     // renderMovieData(title, overview, genres, release_date);
     // getTeaser(movieId);
+}
+
+const renderBackground = (backdrop_path) => {
+    const urlBackground = `https://image.tmdb.org/t/p/original${backdrop_path}`;
+    document.getElementsByClassName('movie-info')[0].style.backgroundImage = `url('${urlBackground}')`;
 }

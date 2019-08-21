@@ -10,4 +10,15 @@
 #movie .movie-info .bg-color-custom {
     height: 100%;
     background-color: rgba(0, 0, 0, 0.85);
-} 
+}
+
+#movie .movie-info .movie-info__poster {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+#movie .movie-info .movie-info__poster-img {
+    width: 90%;
+    
+}

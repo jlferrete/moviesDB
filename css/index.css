@@ -18,7 +18,8 @@
     padding: 10px 20px;
 }
 
-#home .now-playing h2 {
+#home .now-playing h2,
+#home .top-rated-playing h2 {
     text-align: center;
     padding: 15px 0;
     margin: 50px 0 0 0;
@@ -26,18 +27,21 @@
     color: #fff;
 }
 
-#home .now-playing__list li {
+#home .now-playing__list li,
+#home .top-rated-playing__list li {
     display: flex;
     align-items: center;
     justify-content: space-between;
 } 
 
-#home .now-playing__list li h3 {
+#home .now-playing__list li h3,
+#home .top-rated-playing__list li h3 {
     margin: 0;
     font-size: 16px;
 }
 
-#home .now-playing__list img {
+#home .now-playing__list img,
+#home .top-rated-playing__list img {
     width: 70px;
     height: 70px;
     border-radius: 50px;
